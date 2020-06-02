@@ -47,7 +47,7 @@ development:
 
 production:
    <<: *default
-   adapter: postgres
+   adapter: postgresql
    database: ENV["DATABASE_URL"]
 
 
