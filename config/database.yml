@@ -44,3 +44,8 @@ development:
   port: 5432
   username: postgres
   password: password
+
+production:
+   <<: *default
+   adapter: postgres
+   database: ENV["DATABASE_URL"]
