@@ -42,10 +42,13 @@ development:
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
   port: 5432
-  username: postgres
-  password: password
+  username: <%= ENV["USER_NAME"] %>
+  password: <%= ENV["PASSWORD"] %>
 
 production:
    <<: *default
    adapter: postgres
    database: ENV["DATABASE_URL"]
+
+
+
