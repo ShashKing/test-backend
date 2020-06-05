@@ -1,11 +1,14 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :update, :destroy]
+  before_action :authenticate_user!
+
+  
 
   # GET /students
   def index
     @students = Student.all
 
-    render json: @students
+    render json: @students, each_serializer: StudentsSerializer, status: :ok
   end
 
   # GET /students/1
