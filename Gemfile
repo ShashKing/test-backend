@@ -18,7 +18,7 @@ gem 'puma', '~> 4.1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-gem 'rack-cors', '~> 0.3.1'
+gem 'rack-cors', '~> 1.0.5'
 gem 'devise'
 gem 'active_model_serializers', '0.9.3'
 # Reduces boot times through caching; required in config/boot.rb
